@@ -13,6 +13,10 @@ nav {
     position:fixed;
     z-index:999;
     top: 0;
+
+    @media screen and (max-width:768px) {
+        background-color: red;
+    }
     
     .starbucks_logo {
         width: 70px;

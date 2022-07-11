@@ -18,6 +18,12 @@ nav {
   top: 0;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: red;
+  }
+}
+
 nav .starbucks_logo {
   width: 70px;
   height: 70px;
@@ -256,6 +262,12 @@ nav .nav_picture2 {
 
 .brand_box .brand {
   width: 33.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .brand_box .brand {
+    width: 100%;
+  }
 }
 
 .brand_box .brand img {
