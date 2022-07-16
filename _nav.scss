@@ -1,4 +1,4 @@
-.nobox{
+.nobox {
     // 背景透明 數值0-1
     opacity: 0.5;
 }
@@ -8,47 +8,93 @@ nav {
     height: 100px;
     display: flex;
     align-items: center;
-    position:relative;
-    background-color:rgba(234, 230, 230, 0.7);
-    position:fixed;
-    z-index:999;
+    position: relative;
+    background-color: rgba(234, 230, 230, 0.7);
+    position: fixed;
+    z-index: 999;
     top: 0;
-
-    @media screen and (max-width:768px) {
-        background-color: red;
+    @media screen and (max-width: 414px) {
+        overflow: hidden;
     }
-    
+
     .starbucks_logo {
         width: 70px;
         height: 70px;
-        margin-right:120px;
-        margin-left:25px;
+        margin-right: 120px;
+        margin-left: 25px;
+        @media screen and (max-width: 768px) {
+            margin-right: 80px;
+        }
     }
 
     .navtext {
-        margin:50px;
+        margin: 50px;
+        @media screen and (max-width: 768px) {
+            margin: 30px;
+        }
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
+
         a {
             text-decoration: none;
             color: black;
             font-size: 30px;
+            @media screen and (max-width: 768px) {
+                font-size: 25px;
+            }
         }
     }
 
-    img{
+    img {
         width: 50px;
         height: 50px;
     }
-    .nav_picture1{
+    .nav_picture1 {
         position: absolute;
-        right:120px;
+        right: 120px;
         bottom: 20px;
-        
-        
+        @media screen and (max-width: 768px) {
+            right: 70px;
+        }
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
-    .nav_picture2{
+    .nav_picture2 {
         position: absolute;
-        right:60px;
+        right: 60px;
         bottom: 20px;
+        @media screen and (max-width: 768px) {
+            right: 12px;
+        }
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
 
+    .mb_list {
+        
+        @media screen and (max-width: 414px) {
+            
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            top: 100px;
+            text-align: center;
+            letter-spacing: 6px;
+            font-size: 23px;
+            background-color:rgba(234, 230, 230, 0.7);
+            padding: 10px;
+        }
+    }
+    .mb_menu {
+        display: none;
+        @media screen and (max-width: 414px) {
+            display: block;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+    }
 }

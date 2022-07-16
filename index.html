@@ -29,7 +29,13 @@
         <div class="navtext"><a href="">其他服務</a></div>
         <div><img class="nav_picture1" src="img/icon_fb.png" alt=""></div>
         <div><img class="nav_picture2" src="img/icon_ig.png" alt=""></div>
+        
+        <div class="mb_list">
+            <p data-gt-target="#part1">產品介紹</p>
+            <p data-gt-target="#part2">企業理念</p>
+            <p data-gt-target="#part3">聯絡我們</p>
         </div>
+        <img class="mb_menu" src="img/menu.png" alt="">
     </nav>
     <!-- slick輪播 -->
     <div class="slick">
@@ -46,7 +52,7 @@
 
     <!-- 產品飲料介紹 -->
 
-    <div class="product">
+    <div class="product" id="part1">
         <!-- 第一區產品 -->
         <div class="product_zone1">
             <div class="product_text1">
@@ -99,7 +105,7 @@
         </div>
 
         <!-- 星巴克概念介紹 招牌照片-->
-        <div class="brand_box">
+        <div class="brand_box" id="part2">
             <div class="brand b1card">
                 <img src="img/store1.jpg" alt="">
                 <div class="btext">
@@ -150,14 +156,16 @@
             </div>
         </div>
 
-        <footer>
+        <footer id="part3">
             <div class="footer_img  ">
                 <img src="img/icon_fb.png" alt="">
                 <img src="img/icon_ig.png" alt="">
             </div>
             <div class="footer_text">
-                <p class="footer_title">聯絡我們 Customer Service 客服專線 0800-000-482 (服務時間: 週一至週六 09:00-18:00，週日與國定假日除外)</p>
-            <p class="copyright">Copyright © Starbucks Coffee Company. All rights reserved.</p>
+                <p class="footer_title">聯絡我們  Customer Service <br class="mbfooter_br"> 客服專線 0800-000-482 <br>
+                    (服務時間: 週一至週六 09:00-18:00，<br class="mbfooter_br">週日與國定假日除外)
+                </p>
+                <p class="copyright">Copyright © Starbucks Coffee Company. All rights reserved.</p>
             </div>
 
         </footer>
@@ -175,7 +183,7 @@
         AOS.init();
         $('.slick').slick();
     </script>
-<script src="all.js"></script>
+    <script src="all.js"></script>
 
 </body>
 
